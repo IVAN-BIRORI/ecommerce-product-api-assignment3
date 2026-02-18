@@ -1,10 +1,9 @@
 # E-Commerce Product API
 
-A RESTful API built with Spring Boot for managing e-commerce products with PostgreSQL database integration.
+RESTful API built with Spring Boot for managing e-commerce products with PostgreSQL database.
 
 **Author:** BIRORI KANYAMIBWA IVAN  
-**Student ID:** 27255  
-**Branch:** restFull_api_27255
+**Student ID:** 27255
 
 ## Features
 
@@ -59,7 +58,7 @@ Application runs on: http://localhost:8080
 http://localhost:8080/api/products
 ```
 
-![Get all products](images/getall-products.png)
+![Get all products](images2/1.%20Get%20All%20Products.png)
 
 ### 2. Get Products with Pagination
 **GET** `/api/products?page={page}&limit={limit}`
@@ -68,7 +67,7 @@ http://localhost:8080/api/products
 http://localhost:8080/api/products?page=0&limit=5
 ```
 
-![Get products with pagination](images/pagination.png)
+![Get products with pagination](images2/2.Get%20Products%20with%20Pagination.png)
 
 ### 3. Get Product by ID
 **GET** `/api/products/{id}`
@@ -77,7 +76,7 @@ http://localhost:8080/api/products?page=0&limit=5
 http://localhost:8080/api/products/2
 ```
 
-![Get product by ID](images/get-by-id.png)
+![Get product by ID](images2/3.%20Get%20Product%20by%20ID.png)
 
 ### 4. Get Products by Category
 **GET** `/api/products/category/{category}`
@@ -86,7 +85,7 @@ http://localhost:8080/api/products/2
 http://localhost:8080/api/products/category/Electronics
 ```
 
-![Get product by category](images/get-by-category.png)
+![Get product by category](images2/4.%20Get%20Products%20by%20Category.png)
 
 ### 5. Get Products by Brand
 **GET** `/api/products/brand/{brand}`
@@ -95,7 +94,7 @@ http://localhost:8080/api/products/category/Electronics
 http://localhost:8080/api/products/brand/Apple
 ```
 
-![Get product by brand](images/get-by-brand.png)
+![Get product by brand](images2/5.%20Get%20Products%20by%20Brand.png)
 
 ### 6. Search Products by Keyword
 **GET** `/api/products/search?keyword={keyword}`
@@ -104,7 +103,7 @@ http://localhost:8080/api/products/brand/Apple
 http://localhost:8080/api/products/search?keyword=phone
 ```
 
-![Search product by keyword](images/search-keyword.png)
+![Search product by keyword](images2/6.%20Search%20Products%20by%20Keyword.png)
 
 ### 7. Get Products by Price Range
 **GET** `/api/products/price-range?min={min}&max={max}`
@@ -113,7 +112,7 @@ http://localhost:8080/api/products/search?keyword=phone
 http://localhost:8080/api/products/price-range?min=100&max=500
 ```
 
-![Get product by price range](images/price-range.png)
+![Get product by price range](images2/7.%20Get%20Products%20by%20Price%20Range.png)
 
 ### 8. Get Products by BOTH Price Range and Brand
 **GET** `/api/products/filter?price={price}&brand={brand}`
@@ -122,7 +121,7 @@ http://localhost:8080/api/products/price-range?min=100&max=500
 http://localhost:8080/api/products/filter?price=999.99&brand=Apple
 ```
 
-![Search both by price and brand](images/filter-price-brand.png)
+![Search both by price and brand](images2/8.%20Get%20Products%20by%20BOTH%20Price%20Range%20and%20Brand.png)
 
 ### 9. Get In-Stock Products
 **GET** `/api/products/in-stock`
@@ -131,7 +130,7 @@ http://localhost:8080/api/products/filter?price=999.99&brand=Apple
 http://localhost:8080/api/products/in-stock
 ```
 
-![Get in-stock products](images/in-stock.png)
+![Get in-stock products](images2/9.%20Get%20In-Stock%20Products.png)
 
 ### 10. Add New Product
 **POST** `/api/products`
@@ -152,7 +151,7 @@ Body:
 
 Response: `201 Created`
 
-![Add new product](images/add-product.png)
+![Add new product](images2/10.%20Add%20New%20Product.png)
 
 ### 11. Update Product
 **PUT** `/api/products/{id}`
@@ -173,7 +172,7 @@ Body:
 
 Response: `200 OK` or `404 Not Found`
 
-![Update product](images/update-product.png)
+![Update product](images2/11.%20Update%20Product.png)
 
 ### 12. Update Stock Quantity
 **PATCH** `/api/products/{id}/stock?quantity={quantity}`
@@ -184,7 +183,7 @@ http://localhost:8080/api/products/1/stock?quantity=100
 
 Response: `200 OK` or `404 Not Found`
 
-![Update stock quantity](images/update-stock.png)
+![Update stock quantity](images2/12.%20Update%20Stock%20Quantity.png)
 
 ### 13. Delete Product
 **DELETE** `/api/products/{id}`
@@ -195,7 +194,7 @@ http://localhost:8080/api/products/1
 
 Response: `204 No Content` or `404 Not Found`
 
-![Delete product](images/delete-product.png)
+![Delete product](images2/13.%20Delete%20Product.png)
 
 ## HTTP Status Codes
 
